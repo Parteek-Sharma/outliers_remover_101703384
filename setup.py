@@ -9,9 +9,8 @@ from distutils.core import setup
 setup(
   name = 'outliers_remover_101703384',         # How you named your package folder (MyLib)
   packages = ['outliers_remover_101703384'],   # Chose the same as "name"
-  version = '3.0',      # Start with a small number and increase it with every change you make
-  license='MIT',
-  packages = find_packages(), 
+  version = '4.0',      # Start with a small number and increase it with every change you make
+  license='MIT', 
   entry_points ={ 
     'console_scripts': [ 
         'remove_outliers = outliers_remover_101703384.remove_outliers:main'
