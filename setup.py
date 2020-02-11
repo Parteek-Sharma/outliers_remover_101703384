@@ -9,8 +9,14 @@ from distutils.core import setup
 setup(
   name = 'outliers_remover_101703384',         # How you named your package folder (MyLib)
   packages = ['outliers_remover_101703384'],   # Chose the same as "name"
-  version = '1.0',      # Start with a small number and increase it with every change you make
+  version = '3.0',      # Start with a small number and increase it with every change you make
   license='MIT',
+  packages = find_packages(), 
+  entry_points ={ 
+    'console_scripts': [ 
+        'remove_outliers = outliers_remover_101703384.remove_outliers:main'
+    ] 
+  }, 
   description = 'outliers removal using quantiles',   # Give a short description about your library
   author = 'Parteek Sharma',                   # Type in your name
   author_email = 'psharma_be17@thapar.edu',      # Type in your E-Mail
